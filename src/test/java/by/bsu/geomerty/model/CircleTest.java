@@ -14,8 +14,8 @@ public class CircleTest {
     @Test
     public void testPerimeter(){
         Circle circle = new Circle(1,1,1);
-        double area = circle.calculatePerimeter();
-        Assert.assertEquals(6.28,area,0.01);
+        double perimeter = circle.calculatePerimeter();
+        Assert.assertEquals(6.28,perimeter,0.01);
     }
 
 }
