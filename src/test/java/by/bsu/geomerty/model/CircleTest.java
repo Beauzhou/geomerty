@@ -13,9 +13,9 @@ public class CircleTest {
         }
     @Test
     public void testAreaNegative(){
-        Circle circle = new Circle(0,1,1);
+        Circle circle = new Circle(100,-100,100);
         double area = circle.calculateArea();
-        Assert.assertEquals(3.14,area,0.01);
+        Assert.assertEquals(31415.93,area,0.01);
     }
     @Test
     public void testPerimeterNegative(){
@@ -25,9 +25,9 @@ public class CircleTest {
     }
     @Test
     public void testPerimeterPositive(){
-        Circle circle = new Circle(1,1,1);
+        Circle circle = new Circle(-100,100,100);
         double perimeter = circle.calculatePerimeter();
-        Assert.assertEquals(6.28,perimeter,0.01);
+        Assert.assertEquals(628.32,perimeter,0.01);
     }
 
 }
